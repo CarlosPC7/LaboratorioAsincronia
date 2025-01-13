@@ -18,11 +18,11 @@ const crearContenedorPersonajes = (personaje: Personajes): HTMLDivElement => {
   return elementoPersonaje;
 };
 
-const pintarPersonajes = async () => {
-  const personajes = await obtenerPersonajes();
+const pintarPersonajes = async (personajes: Personajes[]) => {
   const listado = document.querySelector("#listado-personajes");
-
+  
   if(listado && listado instanceof HTMLDivElement) {
+    listado.textContent = '';
     personajes.forEach(personaje => {
       const contenedorPersonaje = crearContenedorPersonajes(personaje);
       listado.appendChild(contenedorPersonaje);
@@ -44,21 +44,18 @@ const obtenerValorCampo = (campo: string): string => {
 
 const filtraElPersonaje = async(evento: Event) : Promise <void> => {
   evento.preventDefault();
-
-  const personaje = {
-    nombre: obtenerValorCampo("nombre")
-  };
   
+  const nombrePersonaje = obtenerValorCampo("search-input");
+
   try {
-    await filtrarPersonajes(personaje as Personajes);
+    const datosFiltrados : Personajes[] = await filtrarPersonajes(nombrePersonaje);
+    await pintarPersonajes(datosFiltrados);
   } catch(error) {
     alert(error);
   }
+};
 
-  window.location.href = "./index.html";
-}
-
-document.addEventListener("DOMContentLoaded", () => { 
+document.addEventListener("DOMContentLoaded", async () => { 
   const formulario = document.querySelector("#search-form");
 
   if (formulario && formulario instanceof HTMLFormElement) {
@@ -66,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     throw new Error("No se ha encontrado el personaje");
   }
-
-  pintarPersonajes();
+  const personajes = await obtenerPersonajes();
+  pintarPersonajes(personajes);
 });
 

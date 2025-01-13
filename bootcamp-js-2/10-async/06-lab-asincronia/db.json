@@ -5,7 +5,11 @@
       "nombre": "Mortadelo",
       "apodo": "Mortadelo",
       "especialidad": "Disfraces",
-      "habilidades": ["Camuflaje", "Imitaciones", "Huida rápida"],
+      "habilidades": [
+        "Camuflaje",
+        "Imitaciones",
+        "Huida rápida"
+      ],
       "amigo": "Filemón",
       "imagen": "mortadelo.webp"
     },
@@ -14,7 +18,11 @@
       "nombre": "Filemón",
       "apodo": "Filemón",
       "especialidad": "Ingeniería improvisada",
-      "habilidades": ["Inventor", "Construcción rápida", "Cálculos mentales"],
+      "habilidades": [
+        "Inventor",
+        "Construcción rápida",
+        "Cálculos mentales"
+      ],
       "amigo": "Mortadelo",
       "imagen": "filemon.webp"
     },
@@ -23,7 +31,11 @@
       "nombre": "Ofelia",
       "apodo": "Ofelia",
       "especialidad": "Inteligencia",
-      "habilidades": ["Investigación", "Hacker", "Descifrado de códigos"],
+      "habilidades": [
+        "Investigación",
+        "Hacker",
+        "Descifrado de códigos"
+      ],
       "amigo": "Rompetechos",
       "imagen": "ofelia.webp"
     },
@@ -70,7 +82,11 @@
       "nombre": "Señorita Irma",
       "apodo": "Irma",
       "especialidad": "Agente encubierta",
-      "habilidades": ["Cambios de apariencia", "Seducción", "Manejo de armas"],
+      "habilidades": [
+        "Cambios de apariencia",
+        "Seducción",
+        "Manejo de armas"
+      ],
       "amigo": "",
       "imagen": "irma.webp"
     },
@@ -79,7 +95,11 @@
       "nombre": "Director General de la T.I.A.",
       "apodo": "Director",
       "especialidad": "Gestión estratégica",
-      "habilidades": ["Toma de decisiones", "Planificación", "Coordinación"],
+      "habilidades": [
+        "Toma de decisiones",
+        "Planificación",
+        "Coordinación"
+      ],
       "amigo": "",
       "imagen": "director-general.webp"
     },
@@ -88,7 +108,11 @@
       "nombre": "Bestiajez",
       "apodo": "Bestiajez",
       "especialidad": "Fuerza bruta",
-      "habilidades": ["Fuerza", "Resistencia", "Agilidad"],
+      "habilidades": [
+        "Fuerza",
+        "Resistencia",
+        "Agilidad"
+      ],
       "amigo": "",
       "imagen": "bestiajez.webp"
     },
@@ -97,7 +121,11 @@
       "nombre": "Patrona",
       "apodo": "Patrona",
       "especialidad": "Agente encubierta",
-      "habilidades": ["Cambios de apariencia", "Seducción", "Manejo de armas"],
+      "habilidades": [
+        "Cambios de apariencia",
+        "Seducción",
+        "Manejo de armas"
+      ],
       "amigo": "",
       "imagen": "patrona.jpg"
     },
@@ -106,7 +134,11 @@
       "nombre": "Agente Besuguio",
       "apodo": "Besuguio",
       "especialidad": "Desastre total",
-      "habilidades": ["Meteduras de pata", "Caídas accidentales", "Confusión constante"],
+      "habilidades": [
+        "Meteduras de pata",
+        "Caídas accidentales",
+        "Confusión constante"
+      ],
       "amigo": "",
       "imagen": "besuguio.webp"
     },
@@ -115,7 +147,11 @@
       "nombre": "Agente Borríquez",
       "apodo": "Borríquez",
       "especialidad": "Torpeza extrema",
-      "habilidades": ["Caídas constantes", "Desorientación total", "Destrucción involuntaria"],
+      "habilidades": [
+        "Caídas constantes",
+        "Desorientación total",
+        "Destrucción involuntaria"
+      ],
       "amigo": "",
       "imagen": "borriquez.webp"
     },
@@ -124,7 +160,11 @@
       "nombre": "Agente Boñiguez",
       "apodo": "Boñiguez",
       "especialidad": "Olor fétido",
-      "habilidades": ["Mal olor", "Repulsión involuntaria", "Confusión nasal"],
+      "habilidades": [
+        "Mal olor",
+        "Repulsión involuntaria",
+        "Confusión nasal"
+      ],
       "amigo": "",
       "imagen": "boniguez.webp"
     }

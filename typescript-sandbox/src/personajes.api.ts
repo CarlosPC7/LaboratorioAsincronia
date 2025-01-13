@@ -10,9 +10,10 @@ export const obtenerPersonajes = async (): Promise<Personajes[]> => {
   }
 };
 
-export const filtrarPersonajes = async (personaje: Personajes): Promise<void> => {
+export const filtrarPersonajes = async (nombrePersonaje: string): Promise<Personajes[]> => {
   try {
-    await axios.put(`http://localhost:3000/personajes/${personaje.id}`, personaje)
+    const { data } = await axios.get(`http://localhost:3000/personajes?nombre_like=${nombrePersonaje}`);
+    return data;
   } catch (error) {
     throw new Error("Error al filtrar los personajes");
   }
